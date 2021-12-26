@@ -1,0 +1,85 @@
+#header {
+  position: relative;
+  background-image: url("../../IMG/header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0;
+  -webkit-box-shadow: 0px 0px 100vh 100vh rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 0px 0px 100vh 100vh rgba(0, 0, 0, 0.5) inset;
+}
+
+#header .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  font-family: var(--montserrat-text);
+  color: #fff;
+}
+
+#header .content .content_title {
+  font-size: var(--large-text);
+}
+
+#header .content .sub_title {
+  font-size: var(--normal-text);
+  margin-top: 30px;
+}
+
+#header .content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+  margin-top: 100px;
+  font-size: var(--small-text);
+}
+
+#header .content .buttons .button {
+  border: 3px solid #fff;
+  padding: 15px 80px;
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-animation: blinking 2s infinite;
+          animation: blinking 2s infinite;
+  color: #fff;
+}
+
+#header .content .buttons .button:hover {
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@-webkit-keyframes blinking {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes blinking {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

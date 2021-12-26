@@ -1,0 +1,29 @@
+.contacts{
+    font-size: var(--small-text);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 160px;
+    .contact_container{
+        list-style-type: none;
+
+        position: relative;
+
+        display: grid;
+        grid-row-gap: 60px;
+
+        height: min-content;
+        li{
+            display: flex;
+            align-items: center;    
+            i{
+                position: absolute;
+            }
+            a{
+                margin-left: 100px;
+                
+                color: #000;
+            }   
+        }
+    }
+}

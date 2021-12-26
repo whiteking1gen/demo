@@ -1,0 +1,65 @@
+#header{
+    position: relative;
+    
+    background-image: url('../../IMG/header.jpg');
+    background-size: cover;
+    background-position: center;    
+    padding: 250px 0;
+
+    box-shadow: 0px 0px 100vh 100vh rgba(0, 0, 0, 0.5) inset;
+
+    .content{
+        display: grid;
+        grid-template-rows: auto;
+ 
+        font-family: var(--montserrat-text);
+        
+        color: #fff;
+
+        .content_title{
+            font-size: var(--large-text);
+        }
+        .sub_title{
+            font-size: var(--normal-text);
+
+            margin-top: 30px;
+        }
+        .buttons{
+            display: flex;
+            column-gap: 80px;
+
+            margin-top: 100px;
+
+            font-size: var(--small-text);
+
+            .button{
+                border: 3px solid #fff;
+                padding: 15px 80px;
+                
+                transition: .8s;
+
+                animation: blinking 2s infinite;
+
+                color: #fff;
+
+                &:hover{
+                    transition: .8s;
+
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+@keyframes blinking{
+    from{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    to{
+        transform: scale(1);
+    }
+}
